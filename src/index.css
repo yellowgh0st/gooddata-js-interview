@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+
+.App > div {
+    height: 400px;
+}
+
+.App select {
+    font-size: 30px;
+}
