@@ -1,3 +1,5 @@
+// Copyright (C) 2007-2018, GoodData(R) Corporation. All rights reserved.
+
 import React, { Component } from 'react';
 import '@gooddata/react-components/styles/css/main.css';
 import { AfmComponents } from '@gooddata/react-components';
