@@ -15,7 +15,7 @@ To successfully complete this tutorial, you are required to:
 
 ### Initialization
 
-1. Run `git clone git@github.com:BugsBunny338/gooddata-homework.git`.
+1. Run `git clone git@github.com:gooddata/gooddata-js-interview.git`.
 2. Run `cd gooddata-homework`.
 3. Run `yarn install`.
 4. Run `HTTPS=true yarn start`.
@@ -24,7 +24,7 @@ To successfully complete this tutorial, you are required to:
    - After creating a GoodData account, you will be redirected to our Launch Product Tour (Dashboards tab). Feel free to close the web page and focus on your homework. The Product Tour is not related to the homework.
 6. Visit https://localhost:3000/, and make sure that two column charts are loaded.
 
-![Screenshot after initialization](https://github.com/BugsBunny338/gooddata-homework/blob/master/public/screen.png "Initialization Screenshot")
+![Screenshot after initialization](https://github.com/gooddata/gooddata-js-interview/blob/master/public/screen.png "Initialization Screenshot")
 
 ### Task
 
