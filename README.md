@@ -11,7 +11,7 @@ To successfully complete this tutorial, you are required to:
 * Have `node.js` and `yarn` installed in your development environment.
   * If you do not have these tools installed, you can get them from https://nodejs.org/ and https://yarnpkg.com/ respectively.
 * Have an account on the GoodData platform.
-  * If you do not have a GoodData account yet, [create a trial one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
+  * If you do not have a GoodData account yet, [create one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
 
 ### Initialization
 
@@ -20,7 +20,7 @@ To successfully complete this tutorial, you are required to:
 3. Run `yarn install`.
 4. Run `HTTPS=true yarn start`.
 5. Visit https://localhost:3000/account.html, and log in using your GoodData account credentials.
-   - If you do not have a GoodData account yet, [create a trial one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
+   - If you do not have a GoodData account yet, [create one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
    - After creating a GoodData account, you will be redirected to our Launch Product Tour (Dashboards tab). Feel free to close the web page and focus on your homework. The Product Tour is not related to the homework.
 6. Visit https://localhost:3000/, and make sure that two column charts are loaded.
 
