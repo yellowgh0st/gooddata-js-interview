@@ -30,7 +30,7 @@ To successfully complete this tutorial, you are required to:
 
 __Make the dropdown work. That is, the dropdown `onChange` should reload the upper chart appropriately.__
 
-When you are done, send us the link to your source code repo and the link to the deployed version of your solution.
+When you are done, send us the link to your source code repo and the instructions how to run the demo.
 
 ---
 
