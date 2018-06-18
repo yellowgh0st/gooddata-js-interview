@@ -42,8 +42,11 @@ http://sdk.gooddata.com/gooddata-js/
 
 ### Troubleshooting
 
+###### Server https://secure.gooddata.com/ seems to be down.
+* If you decided to work on this homework during weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://secure.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
+
 ###### Charts do not get loaded.
-  * Most likely, you are not logged in correctly. Check the Network tab in Google Chrome DevTools. If you see `HTTP 401 ERROR`, visit https://localhost:3000/account.html and log in properly.
+* Most likely, you are not logged in correctly. Check the Network tab in Google Chrome DevTools. If you see `HTTP 401 ERROR`, visit https://localhost:3000/account.html and log in properly.
 
 ###### Anything else?
 * Contact your recruiter for further information.
