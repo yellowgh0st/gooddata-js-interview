@@ -16,7 +16,7 @@ To successfully complete this tutorial, you are required to:
 ### Initialization
 
 1. Run `git clone git@github.com:gooddata/gooddata-js-interview.git`.
-2. Run `cd gooddata-homework`.
+2. Run `cd gooddata-js-interview`.
 3. Run `yarn install`.
 4. Run `HTTPS=true yarn start`.
 5. Visit https://localhost:3000/account.html, and log in using your GoodData account credentials.
