@@ -10,19 +10,17 @@ To successfully complete this tutorial, you are required to:
 * Be familiar with the modern JavaScript ecosystem.
 * Have `node.js` and `yarn` installed in your development environment.
   * If you do not have these tools installed, you can get them from https://nodejs.org/ and https://yarnpkg.com/ respectively.
-* Have an account on the GoodData platform.
-  * If you do not have a GoodData account yet, [create one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
 
 ### Initialization
 
 1. Run `git clone git@github.com:gooddata/gooddata-js-interview.git`.
 2. Run `cd gooddata-js-interview`.
 3. Run `yarn install`.
-4. Run `HTTPS=true yarn start`.
+4. Run `HTTPS=true yarn start` on Mac/Unix or `set HTTPS=true&&yarn start` on Windows.
 5. Visit https://localhost:3000/account.html, and log in using your GoodData account credentials.
-   - If you do not have a GoodData account yet, [create one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
-   - After creating a GoodData account, you will be redirected to our Launch Product Tour (Dashboards tab). Feel free to close the web page and focus on your homework. The Product Tour is not related to the homework.
-6. Visit https://localhost:3000/, and make sure that two column charts are loaded.
+   - If you do not have a GoodData account yet, [create one](https://gooddata-examples.herokuapp.com/registration).
+   - After creating a GoodData account, you will be redirected to our GoodData.UI Live Examples. Feel free to get inspired there, but its not related to this homework.
+6. Visit https://localhost:3000/, and make sure that two column charts are loaded like this:
 
 ![Screenshot after initialization](https://github.com/gooddata/gooddata-js-interview/blob/master/public/screen.png "Initialization Screenshot")
 
@@ -38,12 +36,12 @@ We are looking for re-usable code. You are strongly encouraged to "over-engineer
 
 ### Documentation
 
-http://sdk.gooddata.com/gooddata-js/
+http://sdk.gooddata.com/gooddata-ui/
 
 ### Troubleshooting
 
-###### Server https://secure.gooddata.com/ seems to be down.
-* If you decided to work on this homework during weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://secure.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
+###### Server https://developer.na.gooddata.com/ seems to be down.
+* If you decided to work on this homework during weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://developer.na.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
 
 ###### Charts do not get loaded.
 * Most likely, you are not logged in correctly. Check the Network tab in Google Chrome DevTools. If you see `HTTP 401 ERROR`, visit https://localhost:3000/account.html and log in properly.
