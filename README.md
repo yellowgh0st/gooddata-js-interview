@@ -43,7 +43,7 @@ http://sdk.gooddata.com/gooddata-js/
 ### Troubleshooting
 
 ###### Clonning repo fails
-* If clonning using SSH fails, try HTTPS instead: `git clone https://github.com/BugsBunny338/gooddata-js-interview.git`.
+* If clonning using SSH fails, try HTTPS instead: `git clone https://github.com/gooddata/gooddata-js-interview.git`.
 
 ###### Server https://secure.gooddata.com/ seems to be down.
 * If you decided to work on this homework during weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://secure.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
