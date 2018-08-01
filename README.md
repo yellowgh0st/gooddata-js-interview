@@ -18,7 +18,7 @@ To successfully complete this tutorial, you are required to:
 1. Run `git clone git@github.com:gooddata/gooddata-js-interview.git`.
 2. Run `cd gooddata-js-interview`.
 3. Run `yarn install`.
-4. Run `HTTPS=true yarn start`.
+4. Run `HTTPS=true yarn start` (Linux, macOS) or `set HTTPS=true&&npm start` (Windows).
 5. Visit https://localhost:3000/account.html, and log in using your GoodData account credentials.
    - If you do not have a GoodData account yet, [create one](https://secure.gooddata.com/account.html?lastUrl=%252F#/registration/projectTemplate/urn%253Agooddata%253AOnboardingProductTour).
    - After creating a GoodData account, you will be redirected to our Launch Product Tour (Dashboards tab). Feel free to close the web page and focus on your homework. The Product Tour is not related to the homework.
@@ -41,6 +41,9 @@ We are looking for re-usable code. You are strongly encouraged to "over-engineer
 http://sdk.gooddata.com/gooddata-js/
 
 ### Troubleshooting
+
+###### Clonning repo fails
+* If clonning using SSH fails, try HTTPS instead: `git clone https://github.com/BugsBunny338/gooddata-js-interview.git`.
 
 ###### Server https://secure.gooddata.com/ seems to be down.
 * If you decided to work on this homework during weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://secure.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
