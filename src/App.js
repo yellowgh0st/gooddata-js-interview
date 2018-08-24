@@ -3,77 +3,100 @@
 import React, { Component } from 'react';
 import '@gooddata/react-components/styles/css/main.css';
 import { AfmComponents } from '@gooddata/react-components';
-import catalogJson from './catalog.json';
 
 const { ColumnChart } = AfmComponents;
 
+const grossProfitMeasure = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/6877';
+const dateAttributeInMonths = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2142';
+const dateAttribute = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2180';
 
 class App extends Component {
     getAfmMeasures() {
         return {
-            measures: [{
-                id: '# of Activities',
-                definition: {
-                    baseObject: {
-                        id: catalogJson.metrics['# of Activities'].identifier
-                    }
+            measures: [
+                {
+                    localIdentifier: 'm1',
+                    definition: {
+                        measure: {
+                            item: {
+                                uri: grossProfitMeasure
+                            }
+                        }
+                    },
+                    alias: '$ Gross Profit'
                 }
-            }]
+            ]
         }
     }
 
     getAfm() {
         return {
             ...this.getAfmMeasures(),
-            filters: [{
-                between: [-1, -1],
-                granularity: 'year',
-                id: catalogJson.dateDataSets['Date (Activity)'].identifier,
-                intervalType: 'relative',
-                type: 'date'
-            }]
+            filters: [
+                {
+                    absoluteDateFilter: {
+                        dataSet: {
+                            uri: dateAttribute
+                        },
+                        from: '2016-01-01',
+                        to: '2016-01-31'
+                    }
+                }
+            ]
         };
     }
 
-    getAfmForAllYears() {
+    getAfmForAllMonths() {
         return {
             ...this.getAfmMeasures(),
-            attributes: [{
-                id: catalogJson.dateDataSets['Date (Activity)'].attributes['Year (Activity)'].defaultDisplayForm.identifier,
-                type: 'attribute'
-            }]
+            attributes: [
+                {
+                    displayForm: {
+                        uri: dateAttributeInMonths
+                    },
+                    localIdentifier: 'a1'
+                }
+            ]
         }
     }
 
     renderDropdown() {
         return (
-            <select defaultValue="2016">
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
+            <select defaultValue="1">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
             </select>
         )
     }
 
     render() {
-        const projectId = 'la84vcyhrq8jwbu4wpipw66q2sqeb923';
+        const projectId = 'xms7ga4tf3g3nzucd8380o2bev8oeknp';
         const afm = this.getAfm();
-        const afmAllYears = this.getAfmForAllYears();
+        const afmAllMonths = this.getAfmForAllMonths();
 
         return (
             <div className="App">
-                <h1># of Activities: Year {this.renderDropdown()}</h1>
+                <h1>$ Gross Profit in month {this.renderDropdown()} 2016</h1>
                 <div>
                     <ColumnChart
                         afm={afm}
                         projectId={projectId}
                     />
                 </div>
-                <h1># of Activities: Overview (Year by Year)</h1>
+                <h1>$ Gross Profit - All months</h1>
                 <div>
                     <ColumnChart
-                        afm={afmAllYears}
+                        afm={afmAllMonths}
                         projectId={projectId}
                     />
                 </div>

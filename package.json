@@ -3,21 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "proxy": {
-     "/gdc": {
-        "changeOrigin": true,
-        "cookieDomainRewrite": "localhost",
-        "target": "https://secure.gooddata.com/"
-     },
-     "/*.html": {
-        "changeOrigin": true,
-        "secure": false,
-        "target": "https://secure.gooddata.com/"
-     }
+    "/gdc": {
+      "changeOrigin": true,
+      "cookieDomainRewrite": "localhost",
+      "secure": false,
+      "target": "https://developer.na.gooddata.com/",
+      "headers": {
+        "host": "developer.na.gooddata.com",
+        "origin": null
+      }
+    },
+    "/*.html": {
+      "changeOrigin": true,
+      "secure": false,
+      "target": "https://developer.na.gooddata.com/"
+    }
   },
   "dependencies": {
-    "@gooddata/react-components": "^2.9.2",
-    "react": "15",
-    "react-dom": "15",
+    "@gooddata/react-components": "^5.1.0",
+    "react": "15.6.2",
+    "react-dom": "15.6.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
