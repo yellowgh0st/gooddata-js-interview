@@ -3,6 +3,10 @@ Frontend Interview Examples
 
 ## GoodData Homework
 
+### Introduction
+
+Your task is to enhance the application using the [GoodData.UI](https://sdk.gooddata.com/gooddata-ui/).
+
 ### Prerequisites
 
 To successfully complete this tutorial, you are required to:
@@ -30,13 +34,11 @@ __Make the dropdown work. That is, the dropdown `onChange` should reload the upp
 
 When you are done, send us the link to your source code repo and the instructions how to run the demo.
 
----
-
 We are looking for re-usable code. You are strongly encouraged to "over-engineer" this to show off your software architecture and designing skills. Assume that this abstract application will be the first component of a large scale application.
 
-### Documentation
+### GoodData.UI Documentation
 
-http://sdk.gooddata.com/gooddata-ui/
+[GoodData.UI Documentation](https://sdk.gooddata.com/gooddata-ui/docs/about_gooddataui.html)
 
 ### Troubleshooting
 

@@ -2,22 +2,35 @@
 
 import React, { Component } from 'react';
 import '@gooddata/react-components/styles/css/main.css';
-import { AfmComponents } from '@gooddata/react-components';
 
-const { ColumnChart } = AfmComponents;
+import { ColumnChart } from '@gooddata/react-components';
 
 const grossProfitMeasure = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/6877';
 const dateAttributeInMonths = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2142';
 const dateAttribute = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2180';
 
 class App extends Component {
-    getAfmMeasures() {
+
+    getMonthFilter() {
         return {
-            measures: [
-                {
+                absoluteDateFilter: {
+                    dataSet: {
+                        uri: dateAttribute
+                    },
+                    from: '2016-01-01',
+                    to: '2016-01-31'
+                }
+            
+        }        
+    }
+
+    getMeasures() {
+        return [
+            {
+                measure: {
                     localIdentifier: 'm1',
                     definition: {
-                        measure: {
+                        measureDefinition: {
                             item: {
                                 uri: grossProfitMeasure
                             }
@@ -25,38 +38,19 @@ class App extends Component {
                     },
                     alias: '$ Gross Profit'
                 }
-            ]
-        }
+            }
+        ]
     }
 
-    getAfm() {
+    getViewBy() {
         return {
-            ...this.getAfmMeasures(),
-            filters: [
-                {
-                    absoluteDateFilter: {
-                        dataSet: {
-                            uri: dateAttribute
-                        },
-                        from: '2016-01-01',
-                        to: '2016-01-31'
-                    }
-                }
-            ]
-        };
-    }
-
-    getAfmForAllMonths() {
-        return {
-            ...this.getAfmMeasures(),
-            attributes: [
+            visualizationAttribute:
                 {
                     displayForm: {
                         uri: dateAttributeInMonths
                     },
                     localIdentifier: 'a1'
                 }
-            ]
         }
     }
 
@@ -81,28 +75,31 @@ class App extends Component {
 
     render() {
         const projectId = 'xms7ga4tf3g3nzucd8380o2bev8oeknp';
-        const afm = this.getAfm();
-        const afmAllMonths = this.getAfmForAllMonths();
+        const filters = [this.getMonthFilter()];
+        const measures = this.getMeasures();
+        const viewBy = this.getViewBy();
 
         return (
             <div className="App">
                 <h1>$ Gross Profit in month {this.renderDropdown()} 2016</h1>
                 <div>
                     <ColumnChart
-                        afm={afm}
+                        measures={measures}
+                        filters={filters}
                         projectId={projectId}
                     />
                 </div>
                 <h1>$ Gross Profit - All months</h1>
                 <div>
                     <ColumnChart
-                        afm={afmAllMonths}
+                        measures={measures}
+                        viewBy={viewBy}
                         projectId={projectId}
                     />
                 </div>
-         </div>
-      );
-   }
+            </div>
+        );
+    }
 }
 
 export default App;
