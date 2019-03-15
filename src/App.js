@@ -1,4 +1,4 @@
-// Copyright (C) 2007-2018, GoodData(R) Corporation. All rights reserved.
+// Copyright (C) 2007-2019, GoodData(R) Corporation. All rights reserved.
 
 import React, { Component } from 'react';
 import '@gooddata/react-components/styles/css/main.css';
@@ -13,15 +13,15 @@ class App extends Component {
 
     getMonthFilter() {
         return {
-                absoluteDateFilter: {
-                    dataSet: {
-                        uri: dateAttribute
-                    },
-                    from: '2016-01-01',
-                    to: '2016-01-31'
-                }
-            
-        }        
+            absoluteDateFilter: {
+                dataSet: {
+                    uri: dateAttribute
+                },
+                from: '2016-01-01',
+                to: '2016-01-31'
+            }
+
+        }
     }
 
     getMeasures() {
@@ -45,12 +45,12 @@ class App extends Component {
     getViewBy() {
         return {
             visualizationAttribute:
-                {
-                    displayForm: {
-                        uri: dateAttributeInMonths
-                    },
-                    localIdentifier: 'a1'
-                }
+            {
+                displayForm: {
+                    uri: dateAttributeInMonths
+                },
+                localIdentifier: 'a1'
+            }
         }
     }
 
