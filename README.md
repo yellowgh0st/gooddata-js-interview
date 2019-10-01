@@ -22,8 +22,7 @@ To successfully complete this tutorial, you are required to:
 3. Run `yarn install`.
 4. Run `HTTPS=true yarn start` (Linux, macOS) or `set HTTPS=true&&npm start` (Windows).
 5. Visit https://localhost:3000/account.html, and log in using your GoodData account credentials.
-   - If you do not have a GoodData account yet, [create one](https://gooddata-examples.herokuapp.com/registration).
-   - After creating a GoodData account, you will be redirected to our GoodData.UI Live Examples. Feel free to get inspired there, but its not related to this homework.
+   - If you do not have a GoodData account yet, [create one](https://gooddata-examples.herokuapp.com/registration). After creating a GoodData account, you will be redirected to our GoodData.UI Live Examples. Feel free to get inspired there, but its not related to this homework.
 6. Visit https://localhost:3000/, and make sure that two column charts are loaded like this:
 
 ![Screenshot after initialization](https://github.com/gooddata/gooddata-js-interview/blob/master/public/screen.png "Initialization Screenshot")
@@ -42,11 +41,11 @@ We are looking for re-usable code. You are strongly encouraged to "over-engineer
 
 ### Troubleshooting
 
-###### Clonning repo fails
-* If clonning using SSH fails, try HTTPS instead: `git clone https://github.com/gooddata/gooddata-js-interview.git`.
+###### Cloning the repo fails
+* If cloning using SSH fails, try HTTPS instead: `git clone https://github.com/gooddata/gooddata-js-interview.git`.
 
 ###### Server https://developer.na.gooddata.com/ seems to be down.
-* If you decided to work on this homework during weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://developer.na.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
+* If you decided to work on this homework during the weekend, it is possible our platform may be down for several hours due to maintenance (typically on Saturdays). If https://developer.na.gooddata.com/ is down, try again in an hour or two. If you need more time to work on this homework, let us know.
 
 ###### Charts do not get loaded.
 * Most likely, you are not logged in correctly. Check the Network tab in Google Chrome DevTools. If you see `HTTP 401 ERROR`, visit https://localhost:3000/account.html and log in properly.
