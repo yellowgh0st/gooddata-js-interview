@@ -17,7 +17,7 @@ To successfully complete this tutorial, you are required to:
 
 ### Initialization
 
-1. Run `git clone git@github.com:gooddata/gooddata-js-interview.git`.
+1. Make a [fork of this repository and clone it](https://help.github.com/en/articles/fork-a-repo).
 2. Run `cd gooddata-js-interview`.
 3. Run `yarn install`.
 4. Run `HTTPS=true yarn start` (Linux, macOS) or `set HTTPS=true&&npm start` (Windows).
