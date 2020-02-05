@@ -20,7 +20,7 @@ To successfully complete this tutorial, you are required to:
 1. Make a [fork of this repository and clone it](https://help.github.com/en/articles/fork-a-repo).
 2. Run `cd gooddata-js-interview`.
 3. Run `yarn install`.
-4. Run `HTTPS=true yarn start` (Linux, macOS) or `set HTTPS=true&&npm start` (Windows).
+4. Run `yarn start`.
 5. Visit https://localhost:3000/account.html, and log in using your GoodData account credentials.
    - If you do not have a GoodData account yet, [create one](https://gooddata-examples.herokuapp.com/registration). After creating a GoodData account, you will be redirected to our GoodData.UI Live Examples. Feel free to get inspired there, but its not related to this homework.
 6. Visit https://localhost:3000/, and make sure that two column charts are loaded like this:
