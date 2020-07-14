@@ -89,7 +89,7 @@ const MonthViewChart = (props) => {
         <div style={props.style}>
             <h2>$ Gross Profit in month <Select onChange={onMonthChange}/> 2016</h2>
             {initalized &&
-                <ColumnChart projectId={projectId} measures={measures} filters={filter}  style={'block'} />
+                <ColumnChart projectId={projectId} measures={measures} filters={filter}  style={{ display: 'block' }} />
             }
             {!initalized &&
                 <div style={{ textAlign: 'center' }}>
