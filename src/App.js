@@ -15,7 +15,6 @@ const App = () => {
                 <div style={{ height: '530px' }}>
                     <MonthViewChart />
                 </div>
-                <h2>$ Gross Profit - All Months</h2>
                 <div style={{ height: '530px' }}>
                     <YearViewChart />
                 </div>

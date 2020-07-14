@@ -7,13 +7,9 @@ import { ColumnChart } from '@gooddata/react-components'
 
 const YearViewChart = (props) => {
 
-    const grossProfitMeasure = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/6877'
-    const dateAttribute = '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2180'
-
     const [ initalized, setInitalized ] = useState(true)
     const [ measures, setMeasures ] = useState(null)
     const [ viewBy, setViewBy ] = useState(null)
-    const [ filter, setFilter ] = useState(null)
 
     const chartData = [{
         measure: {
@@ -57,6 +53,7 @@ const YearViewChart = (props) => {
 
     return (
         <div style={props.style}>
+            <h2>$ Gross Profit - All Months</h2>
             {initalized &&
                 <ColumnChart projectId={projectId} measures={measures} viewBy={viewBy}/>
             }
